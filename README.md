@@ -21,7 +21,7 @@ portfolio-website
 ├── app.js
 
 ## 🌍 Live Demo
-(Will be added after deployment)
+https://timely-faloodeh-423ba1.netlify.app/ 
 
 ## 📬 Contact
 Feel free to connect with me via LinkedIn or email.
