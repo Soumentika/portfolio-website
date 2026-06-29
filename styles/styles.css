@@ -119,7 +119,7 @@ header{
 }
 .header-content{
     display:grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 20% 80%;
     align-items:center;
 }
 .right-header {
@@ -144,7 +144,7 @@ header{
 }*/
 .image img{
   width: 100%;
-  max-width: 350px;
+  max-width: 300px;
   height: auto;
   display: block;
   border-radius: 10px;
