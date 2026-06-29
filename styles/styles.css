@@ -128,7 +128,7 @@ header{
   justify-content: center;
 
   padding: 3rem;
-  margin-right: 4rem;
+  margin-right: 1rem;
 
   /* Glass effect */
   background: rgba(255, 255, 255, 0.03);
@@ -137,10 +137,19 @@ header{
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
 }
-.image img{
+/*.image img{
   width: 350px;
   display: block;
   border-radius: 10px;
+}*/
+.image img{
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
 }
 section{
  
@@ -243,10 +252,16 @@ background:#27ae60;
   grid-template-columns: repeat(2,1fr);
   height:100%;
 }
-.left-header{
+/*.left-header{
   display:flex;
   align-items: center;
   position: relative;
+}*/
+.left-header{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
 }
 .right-header .name{
     font-size: 3rem;
@@ -262,7 +277,7 @@ background:#27ae60;
 }
 .h-shape{
   transition: all .4s ease-in-out;
-  width: 65%;
+  width: 50%;
   height: 100%;
   background-color: var(--color-secondary);
   position: absolute;
@@ -1507,6 +1522,22 @@ body {
 }
 @media screen and (max-width: 768px) {
   .left-header {
-    display: none;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+
+  .header-content{
+    grid-template-columns: 40% 60%;
+  }
+
+  .image img{
+    max-width: 280px;
+  }
+
+  .right-header{
+    margin-right: 0;
+    padding: 2rem;
   }
 }
